@@ -7,159 +7,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2021 Euro Generator</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .input-row {
-            position: relative;
-        }
-        .input-row::after {
-            content: " ";
-            display: block;
-            height: 2px;
-            width: 1rem;
-            background: #000;
-            position: absolute;
-            left: calc(100% + 0.5rem);
-            top: calc(50% + 1px);
-        }
-    </style>
 </head>
 <body>
     <div class="h-screen w-full flex flex-col justify-center items-center space-y-8 bg-gray-50">
-        <div class="flex flex-row flex-nowrap mx-auto space-x-8 border p-4 rounded bg-white">
-            <div class="w-80 flex-0">
-                <div class="space-y-3">
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                    <div class="h-5 input-row">
-                        <input type="text" placeholder="Name" class="w-full text-right">
-                    </div>
-                </div>
-            </div>
-            <div class="w-80 flex-0">
-                <div class="space-y-3">
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    <div class="h-5 empty-country-slot">?</div>
-                    
-                </div>
-            </div>
+        <h1 class="font-bold text-xl">Euro 2020 Sweepstake Draw</h1>
+        <div class="mx-auto space-x-8 border p-8 rounded bg-white">
+            <dl class="grid grid-flow-col grid-cols-3 grid-rows-4 gap-8" id="players">
+            </dl>
         </div>
         <div>
-            <button class="border py-4 px-8 rounded bg-white" onclick="spinCountries()">Spin!</button>
+            <button class="border py-4 px-8 rounded bg-white" onclick="spin()">Spin! ⚽️</button>
         </div>
     </div>
     <script>
-        function spinCountries() {
-            let countryArray = [
-                "🇮🇹 Italy (A)", "🇨🇭 Switzerland (A)", "🇹🇷 Turkey (A)", "🏴󠁧󠁢󠁷󠁬󠁳󠁿Wales (A)",
-                "🇧🇪 Belgium (B)", "🇩🇰 Denmark (B)", "🇫🇮 Finland (B)", "🇷🇺 Russia (B)",
-                "🇦🇹 Austria (C)", "🇳🇱 Netherlands (C)", "🇲🇰 North Macedonia (C)", "🇺🇦 Ukraine (C)",
-                "🇭🇷 Croatia (D)", "🇨🇿 Czech Republic (D)", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 England (D)", "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (D)", 
-                "🇵🇱 Poland (E)", "🇸🇰 Slovakia (E)", "🇪🇸 Spain (E)", "🇸🇪 Sweden (E)",
-                "🇫🇷 France (F)", "🇩🇪 Germany (F)", "🇭🇺 Hungary (F)", "🇵🇹 Portugal (F)"
-            ];
-            let emptySlots = document.querySelectorAll('.empty-country-slot');
-            let randomisedArray = [];
-            let loopindex = 0;
-            while (countryArray.length !== 0)
+        // Create the players list
+        const s8Players = [
+            "Colin", "John", "Laszlo", "Fran", "Mario", "Huw", "Bruno", "Warren", "Biel", "Carol", "Andreas", "Fi", "Harry", "Jordan", "Ruth", "Felicity", "Michael", "Sean", "Alistair"
+        ];
+        let playersNode = document.querySelector('#players');
+        let playerElements = [];
+        s8Players.forEach(playerName => {
+            let player = document.createElement("dt");
+            let playersName = document.createElement("dd");
+            playersName.innerHTML = playerName;
+            playersName.classList.add('font-bold');
+            player.appendChild(playersName);
+            let playersFirstTeam = document.createElement("dd");
+            let playersSecondTeam = document.createElement("dd");
+            playersFirstTeam.classList.add('first-team');
+            playersSecondTeam.classList.add('second-team');
+            playersFirstTeam.classList.add('text-sm');
+            playersSecondTeam.classList.add('text-sm');
+            playersFirstTeam.innerHTML = '<span class="text-gray-400 tracking-widest">???</span>';
+            playersSecondTeam.innerHTML = '<span class="text-gray-400 tracking-widest">???</span>';
+            player.appendChild(playersFirstTeam);
+            player.appendChild(playersSecondTeam);
+            playersNode.appendChild(player);
+            playerElements.push(player);
+        });
+
+        const fullCountryArray = [
+            "🇮🇹 Italy (A)", "🇨🇭 Switzerland (A)", "🇹🇷 Turkey (A)", "🏴󠁧󠁢󠁷󠁬󠁳󠁿 Wales (A)",
+            "🇧🇪 Belgium (B)", "🇩🇰 Denmark (B)", "🇫🇮 Finland (B)", "🇷🇺 Russia (B)",
+            "🇦🇹 Austria (C)", "🇳🇱 Netherlands (C)", "🇲🇰 North Macedonia (C)", "🇺🇦 Ukraine (C)",
+            "🇭🇷 Croatia (D)", "🇨🇿 Czech Republic (D)", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 England (D)", "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (D)", 
+            "🇵🇱 Poland (E)", "🇸🇰 Slovakia (E)", "🇪🇸 Spain (E)", "🇸🇪 Sweden (E)",
+            "🇫🇷 France (F)", "🇩🇪 Germany (F)", "🇭🇺 Hungary (F)", "🇵🇹 Portugal (F)"
+        ];
+
+        function spin() {
+            let firstCountryArray = [...fullCountryArray];
+            let firstRandomisedArray = [];
+            let secondCountryArray = [...fullCountryArray];
+            let secondRandomisedArray = [];
+            let firstTeams = document.querySelectorAll('.first-team');
+            let secondTeams = document.querySelectorAll('.second-team');
+            
+            // This makes a nice tidy random array without duplcation
+            while (firstCountryArray.length !== 0)
             {
-                let randomIndex = Math.floor(Math.random() * countryArray.length);
-                randomisedArray.push(countryArray[randomIndex]);
-                countryArray.splice(randomIndex, 1);
+                let randomIndex1 = Math.floor(Math.random() * firstCountryArray.length);
+                firstRandomisedArray.push(firstCountryArray[randomIndex1]);
+                firstCountryArray.splice(randomIndex1, 1);
+            }
+
+            while (secondCountryArray.length !== 0)
+            {
+                let randomIndex2 = Math.floor(Math.random() * secondCountryArray.length);
+                secondRandomisedArray.push(secondCountryArray[randomIndex2]);
+                secondCountryArray.splice(randomIndex2, 1);
             }
             
-            emptySlots.forEach(el => {
-                el.innerHTML = randomisedArray[loopindex];
-                loopindex++;
+            let firstLoopIndex = 0;
+            firstTeams.forEach(el => {
+                el.innerHTML = firstRandomisedArray[firstLoopIndex];
+                firstLoopIndex++;
             });
+
+            let secondLoopIndex = 0;
+            secondTeams.forEach(el => {
+                el.innerHTML = secondRandomisedArray[secondLoopIndex];
+                secondLoopIndex++;
+            });
+
+            checkValidity();
+            
+        }
+
+        // If a player has two of the same team, it's considered bad, so we respin.
+        function checkValidity() {
+            let isValidSpin = true;
+
+            playerElements.forEach(player => {
+                let firstTeam = player.childNodes[1].innerHTML;
+                let secondTeam = player.childNodes[2].innerHTML;
+
+                if (firstTeam == secondTeam) {
+                    isValidSpin = false;
+                }
+            });
+
+            if (!isValidSpin) {
+                spin();
+            } else {
+                checkForUnclaimedTeams();
+            }
+        }
+
+        function checkForUnclaimedTeams() {
+            let claimedTeams = [];
+
+            playerElements.forEach(player => {
+                claimedTeams.push(player.childNodes[1].innerHTML);
+                claimedTeams.push(player.childNodes[2].innerHTML);
+            });
+
+            let missingCountries = fullCountryArray.filter(item => claimedTeams.indexOf(item) == -1);
+
+            if (missingCountries.length > 0) {
+                spin();
+            }
         }
     </script>
 </body>
