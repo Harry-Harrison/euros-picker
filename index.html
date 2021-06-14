@@ -4,130 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widiv class="dt"h=device-widiv class="dt"h, initial-scale=1.0">
     <title>2021 Euro Generator</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="h-screen w-full flex flex-col justify-center items-center space-y-8 bg-gray-50">
-        <h1 class="font-bold text-xl">Euro 2020 Sweepstake Draw</h1>
+        <h1 class="font-bold text-xl">Euro 2020 Sweepstake Draw Results</h1>
         <div class="mx-auto space-x-8 border p-8 rounded bg-white">
-            <dl class="grid grid-flow-col grid-cols-3 grid-rows-4 gap-8" id="players">
-            </dl>
-        </div>
-        <div>
-            <button class="border py-4 px-8 rounded bg-white" onclick="spin()">Spin! ⚽️</button>
+            <div class="grid grid-flow-col grid-cols-3 grid-rows-4 gap-8" id="players">
+                <div class="dt"><div class="font-bold">Colin</div><div class="first-team text-sm">🇭🇺 Hungary (F)</div><div class="second-team text-sm">🇪🇸 Spain (E)</div>
+                </div>
+                <div class="dt"><div class="font-bold">John</div><div class="first-team text-sm">🇭🇷 Croatia (D)</div><div class="second-team text-sm">🇵🇹 Portugal (F)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Laszlo</div><div class="first-team text-sm">🇩🇪 Germany (F)</div><div class="second-team text-sm">🇷🇺 Russia (B)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Fran</div><div class="first-team text-sm">🇦🇹 Austria (C)</div><div class="second-team text-sm">🇸🇪 Sweden (E)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Mario</div><div class="first-team text-sm">🇸🇰 Slovakia (E)</div><div class="second-team text-sm">🇩🇪 Germany (F)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Huw</div><div class="first-team text-sm">🇧🇪 Belgium (B)</div><div class="second-team text-sm">🇲🇰 North Macedonia (C)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Bruno</div><div class="first-team text-sm">🏴󠁧󠁢󠁷󠁬󠁳󠁿 Wales (A)</div><div class="second-team text-sm">🇩🇰 Denmark (B)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Warren</div><div class="first-team text-sm">🇵🇹 Portugal (F)</div><div class="second-team text-sm">🇮🇹 Italy (A)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Biel</div><div class="first-team text-sm">🇹🇷 Turkey (A)</div><div class="second-team text-sm">🇸🇰 Slovakia (E)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Carol</div><div class="first-team text-sm">🇮🇹 Italy (A)</div><div class="second-team text-sm">🇺🇦 Ukraine (C)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Andreas</div><div class="first-team text-sm">🇫🇮 Finland (B)</div><div class="second-team text-sm">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (D)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Fi</div><div class="first-team text-sm">🇨🇭 Switzerland (A)</div><div class="second-team text-sm">🇦🇹 Austria (C)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Harry</div><div class="first-team text-sm">🇫🇷 France (F)</div><div class="second-team text-sm">🇭🇺 Hungary (F)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Jordan</div><div class="first-team text-sm">🇲🇰 North Macedonia (C)</div><div class="second-team text-sm">🇨🇭 Switzerland (A)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Ruth</div><div class="first-team text-sm">🇵🇱 Poland (E)</div><div class="second-team text-sm">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England (D)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Tiago</div><div class="first-team text-sm">🇨🇿 Czech Republic (D)</div><div class="second-team text-sm">🇳🇱 Netherlands (C)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Michael</div><div class="first-team text-sm">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (D)</div><div class="second-team text-sm">🏴󠁧󠁢󠁷󠁬󠁳󠁿 Wales (A)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Sean</div><div class="first-team text-sm">🇷🇺 Russia (B)</div><div class="second-team text-sm">🇫🇷 France (F)</div>
+                </div>
+                <div class="dt"><div class="font-bold">Alistair</div><div class="first-team text-sm">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England (D)</div><div class="second-team text-sm">🇫🇮 Finland (B)</div>
+                </div>
+            </div>
         </div>
     </div>
-    <script>
-        // Create the players list
-        const s8Players = [
-            "Colin", "John", "Laszlo", "Fran", "Mario", "Huw", "Bruno", "Warren", "Biel", "Carol", "Andreas", "Fi", "Harry", "Jordan", "Ruth", "Tiago", "Michael", "Sean", "Alistair"
-        ];
-        let playersNode = document.querySelector('#players');
-        let playerElements = [];
-        s8Players.forEach(playerName => {
-            let player = document.createElement("dt");
-            let playersName = document.createElement("dd");
-            playersName.innerHTML = playerName;
-            playersName.classList.add('font-bold');
-            player.appendChild(playersName);
-            let playersFirstTeam = document.createElement("dd");
-            let playersSecondTeam = document.createElement("dd");
-            playersFirstTeam.classList.add('first-team');
-            playersSecondTeam.classList.add('second-team');
-            playersFirstTeam.classList.add('text-sm');
-            playersSecondTeam.classList.add('text-sm');
-            playersFirstTeam.innerHTML = '<span class="text-gray-400 tracking-widest">???</span>';
-            playersSecondTeam.innerHTML = '<span class="text-gray-400 tracking-widest">???</span>';
-            player.appendChild(playersFirstTeam);
-            player.appendChild(playersSecondTeam);
-            playersNode.appendChild(player);
-            playerElements.push(player);
-        });
-
-        const fullCountryArray = [
-            "🇮🇹 Italy (A)", "🇨🇭 Switzerland (A)", "🇹🇷 Turkey (A)", "🏴󠁧󠁢󠁷󠁬󠁳󠁿 Wales (A)",
-            "🇧🇪 Belgium (B)", "🇩🇰 Denmark (B)", "🇫🇮 Finland (B)", "🇷🇺 Russia (B)",
-            "🇦🇹 Austria (C)", "🇳🇱 Netherlands (C)", "🇲🇰 North Macedonia (C)", "🇺🇦 Ukraine (C)",
-            "🇭🇷 Croatia (D)", "🇨🇿 Czech Republic (D)", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 England (D)", "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland (D)", 
-            "🇵🇱 Poland (E)", "🇸🇰 Slovakia (E)", "🇪🇸 Spain (E)", "🇸🇪 Sweden (E)",
-            "🇫🇷 France (F)", "🇩🇪 Germany (F)", "🇭🇺 Hungary (F)", "🇵🇹 Portugal (F)"
-        ];
-
-        function spin() {
-            let firstCountryArray = [...fullCountryArray];
-            let firstRandomisedArray = [];
-            let secondCountryArray = [...fullCountryArray];
-            let secondRandomisedArray = [];
-            let firstTeams = document.querySelectorAll('.first-team');
-            let secondTeams = document.querySelectorAll('.second-team');
-            
-            // This makes a nice tidy random array without duplcation
-            while (firstCountryArray.length !== 0)
-            {
-                let randomIndex1 = Math.floor(Math.random() * firstCountryArray.length);
-                firstRandomisedArray.push(firstCountryArray[randomIndex1]);
-                firstCountryArray.splice(randomIndex1, 1);
-            }
-
-            while (secondCountryArray.length !== 0)
-            {
-                let randomIndex2 = Math.floor(Math.random() * secondCountryArray.length);
-                secondRandomisedArray.push(secondCountryArray[randomIndex2]);
-                secondCountryArray.splice(randomIndex2, 1);
-            }
-            
-            let firstLoopIndex = 0;
-            firstTeams.forEach(el => {
-                el.innerHTML = firstRandomisedArray[firstLoopIndex];
-                firstLoopIndex++;
-            });
-
-            let secondLoopIndex = 0;
-            secondTeams.forEach(el => {
-                el.innerHTML = secondRandomisedArray[secondLoopIndex];
-                secondLoopIndex++;
-            });
-
-            checkValidity();
-            
-        }
-
-        // If a player has two of the same team, it's considered bad, so we respin.
-        function checkValidity() {
-            let isValidSpin = true;
-
-            playerElements.forEach(player => {
-                let firstTeam = player.childNodes[1].innerHTML;
-                let secondTeam = player.childNodes[2].innerHTML;
-
-                if (firstTeam == secondTeam) {
-                    isValidSpin = false;
-                }
-            });
-
-            if (!isValidSpin) {
-                spin();
-            } else {
-                checkForUnclaimedTeams();
-            }
-        }
-
-        function checkForUnclaimedTeams() {
-            let claimedTeams = [];
-
-            playerElements.forEach(player => {
-                claimedTeams.push(player.childNodes[1].innerHTML);
-                claimedTeams.push(player.childNodes[2].innerHTML);
-            });
-
-            let missingCountries = fullCountryArray.filter(item => claimedTeams.indexOf(item) == -1);
-
-            if (missingCountries.length > 0) {
-                spin();
-            }
-        }
-    </script>
 </body>
 </html>
